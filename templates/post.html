@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+
+        * {
+          box-sizing: border-box;
+          background-color: #ffffff;
+          font-family: "Roboto", sans-serif;
+          color: #464655;
+        }
+
+        body {
+
+        }
+
+        /* Style the header */
+        header {
+          background-color: #ffffff;
+          padding: 10px;
+          text-align: center;
+          font-size: 35px;
+        }
+
+        header h2 {
+          font-size: 90px;
+          color: #464655;
+          font-style: black;
+          margin: 10px;
+        }
+
+        header h4 {
+          font-size: 25px;
+          //font-family: "Bree", "Bree Serif", serif;
+          color: #2E6171;
+          font-style: italic;
+          margin: -10px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .row {
+          margin-left: 10%;
+          margin-right: 10%;
+          margin-top: 50px;
+          float: center;
+        }
+        .button {
+          background-color: #2E6171; /* Green */
+          border-radius: 7px;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+          width: 20%;
+          margin-right: 40%;
+          margin-left: 40%;
+        }
+
+        .button1 {
+          background-color: white;
+          color: black;
+          border: 2px solid #2E6171;
+        }
+
+        .button1:hover {
+          background-color: #2E6171;
+          color: white;
+        }
+
+        .button2 {
+          background-color: white;
+          color: black;
+          width: auto;
+          margin-right: 37%;
+          margin-left: 37%;
+        }
+
+        ul {
+          border-radius: 10px;
+          background: #C9C5CB;
+          float: left;
+          width: 80%;
+          padding: 10px;
+          margin-left: 10%;
+          margin-right: 10%;
+          margin-top: 50px;
+        }
+
+
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Style the footer */
+        .footer {
+          padding: -10px;
+          text-align: center;
+        }
+
+        input > span {
+          display: inline-block;
+          margin-left: -28px;
+          padding-left: 28px;
+          line-height: 24px;
+          vertical-align: bottom;
+          text-align: left;
+        }
+
+        #left {
+          text-align: left;
+          width: 40%;
+          margin: auto;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 800px) {
+          .header {
+            height: 10%;
+          }
+          .column {
+            height: 80%;
+          }
+          .footer {
+            height: 10%;
+          }
+        }
+        </style>
+    </head>
+    <body>
+        <!-- <h1>got to the body</h1>
+        <form action="/api/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="audio" accept="*">
+            <input type="submit" value="submit">
+
+
+            <button class="button button1" type="submit" value="submit">Upload</button>
+                <button class="button button1" action="/api/upload" method="POST" enctype="multipart/form-data">Upload</button>
+        </form> -->
+        <header>
+          <h2>JMORE</h2>
+          <h4>Enabling innovation by connecting researchers to existing research</h4>
+        </header>
+
+
+        <div class="row">
+            <h2>Select Most Relevant Search Queries From These Suggestions</h2>
+            <li>
+                <form action="present.html">
+                <input type="checkbox" name="level" value="0">exploiting anothers cooperative behavior<br>
+                <input type="checkbox" name="level" value="1">cooperative relation<br>
+                <input type="checkbox" name="level" value="2">everyday understandings <br>
+                <input type="checkbox" name="level" value="3">denied communication among<br>
+                <input type="submit" class="button button1" value="Submit">
+                </form>
+            </li>
+        </div>
+    </body>
+</html>
